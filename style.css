@@ -46,12 +46,12 @@ nav > a {
 }
 
 .menu__item {
-  font-size: 24px;
   color: black;
   margin: 0 30px;
   cursor: pointer;
   font-style: normal;
   font-weight: 500;
+  font-size: 15px;
   line-height: 20px;
 }
 
@@ -694,7 +694,7 @@ textarea {
 }
 
 .background {
-  background-image: url(assets/contact-form.png);
+  background-image: url("assets/contact-form.png");
   border-top-left-radius: 90px;
   background-size: contain, cover;
   background-position: right;
@@ -1306,6 +1306,10 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("assets/contact-web.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
   }
 
   .contact-me h2 {
@@ -1362,7 +1366,7 @@ label {
   }
 
   .background {
-    background-image: url(assets/contact-web.svg);
+    background-image: none;
     margin-top: 79px;
     text-align: center;
     display: flex;
