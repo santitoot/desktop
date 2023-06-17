@@ -46,12 +46,12 @@ nav > a {
 }
 
 .menu__item {
-  font-size: 24px;
   color: black;
   margin: 0 30px;
   cursor: pointer;
   font-style: normal;
   font-weight: 500;
+  font-size: 15px;
   line-height: 20px;
 }
 
@@ -143,7 +143,6 @@ nav > a {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396df2;
 }
 
 .multii > p {
@@ -175,7 +174,6 @@ nav > a {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396df2;
 }
 
 .lenguages p {
@@ -243,7 +241,6 @@ nav > a {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396df2;
 }
 
 .profile > main > p {
@@ -348,16 +345,32 @@ ul {
 
 .my-button {
   display: flex;
+  color: #6070ff;
   flex-direction: row;
   padding: 12px;
   gap: 10px;
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #6070ff;
   width: 126px;
   height: 48px;
   position: absolute;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.my-button:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.my-button:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.my-button:disabled {
+  color: #5e6c84;
+  border: 1px solid #c1c7d0;
 }
 
 .multi {
@@ -506,8 +519,6 @@ ul {
   align-items: center;
   padding: 12px;
   gap: 10px;
-  background-color: white;
-  border: 1px solid #6070ff;
   width: 162px;
   height: 48px;
   border-radius: 8px;
@@ -538,6 +549,7 @@ h3 {
   font-size: 20px;
   line-height: 24px;
   margin-left: 36px;
+  margin-top: 1px;
 }
 
 .lenguages {
@@ -691,10 +703,27 @@ textarea {
   cursor: pointer;
   margin-top: 22px;
   margin-left: 24px;
+  color: #6070ff;
+}
+
+.el-botones:hover {
+  background-color: #6070ff;
+  color: #fff;
+  border-color: #fff;
+}
+
+.el-botones:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.el-botones:disabled {
+  color: #5e6c84;
+  border: 1px solid #c1c7d0;
 }
 
 .background {
-  background-image: url(assets/contact-form.png);
+  background-image: url("assets/contact-form.png");
   border-top-left-radius: 90px;
   background-size: contain, cover;
   background-position: right;
@@ -720,6 +749,7 @@ label {
 
 .boton {
   margin-top: 24px;
+  align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -784,7 +814,6 @@ label {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-    color: #396df2;
   }
 
   .multii > p {
@@ -816,7 +845,6 @@ label {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-    color: #396df2;
   }
 
   .lenguages p {
@@ -887,7 +915,6 @@ label {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-    color: #396df2;
   }
 
   .contact-me p {
@@ -950,9 +977,8 @@ label {
   }
 
   .imagen-contenedor {
-    display: flex;
-    width: 544px;
-    height: 448px;
+    width: 50%;
+    height: 100%;
     border-radius: 8px;
   }
 
@@ -970,7 +996,7 @@ label {
   }
 
   .tonicc {
-    margin-left: 46px;
+    margin-left: 24px;
   }
 
   .container {
@@ -1106,12 +1132,12 @@ label {
 
   .first {
     background-size: cover;
-    width: 447px;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    padding: 24px;
+    padding: 0 24px 0 0;
     margin-top: 166px;
-    margin-left: 143px;
+    margin-left: 8%;
   }
 
   .first h4 {
@@ -1129,8 +1155,8 @@ label {
   }
 
   .first > main > p {
-    width: 447px;
-    height: 147px;
+    display: block;
+    width: 100%;
     font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1153,7 +1179,6 @@ label {
     font-size: 16px;
     line-height: 24px;
     color: #7f8cff;
-    margin-top: 12px;
   }
 
   .el-boton {
@@ -1172,8 +1197,8 @@ label {
   }
 
   .second {
-    margin-left: 24px;
     margin-top: 166px;
+    width: 60%;
   }
 
   .social {
@@ -1229,7 +1254,7 @@ label {
     width: 120px;
     height: 120px;
     margin-top: 36px;
-    margin-left: 16px;
+    margin-left: 7%;
     border-radius: 8px;
     padding: 12px;
   }
@@ -1250,7 +1275,7 @@ label {
     width: 120px;
     height: 120px;
     margin-top: 36px;
-    margin-left: 16px;
+    margin-left: 13%;
     border-radius: 8px;
     padding: 12px;
   }
@@ -1278,7 +1303,7 @@ label {
     width: 6px;
     height: 12px;
     margin-top: 42px;
-    margin-left: 140px;
+    margin-left: 400px;
   }
 
   .class {
@@ -1295,7 +1320,7 @@ label {
     width: 6px;
     height: 12px;
     margin-top: 114px;
-    margin-left: 215px;
+    margin-left: 473px;
   }
 
   .contact-me {
@@ -1306,6 +1331,10 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("assets/contact-web.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
   }
 
   .contact-me h2 {
@@ -1362,7 +1391,7 @@ label {
   }
 
   .background {
-    background-image: url(assets/contact-web.svg);
+    background-image: none;
     margin-top: 79px;
     text-align: center;
     display: flex;
@@ -1391,15 +1420,15 @@ label {
   }
 
   .multii {
-    margin-left: 48px;
+    margin-left: 24px;
   }
 
   .tonic-22 {
-    margin-left: 46px;
+    margin-left: 24px;
   }
 
   .multi-22 {
-    margin-left: 48px;
+    margin-left: 24px;
   }
 
   .boton {
