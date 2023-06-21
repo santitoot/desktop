@@ -12,6 +12,7 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+  - [🚀live demo](#Live-Demo)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -30,6 +31,9 @@
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+This is the [live demo link] (https://santitoot.github.io/desktop/)
 
 
 # 📖 [mobil] <a name="about-project"></a>
@@ -177,7 +181,3 @@ This project is [MIT](MIT.md) licensed.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-This is the [live demo link] (https://santitoot.github.io/desktop/)
