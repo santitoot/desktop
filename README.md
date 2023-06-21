@@ -33,7 +33,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-(https://santitoot.github.io/desktop/)
+https://santitoot.github.io/desktop/
 
 
 # 📖 [mobil] <a name="about-project"></a>
