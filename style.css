@@ -36,7 +36,7 @@ nav > a {
 
 .menu {
   height: 80px;
-  display: flex; 
+  display: flex;
 }
 
 .menu__options {
@@ -46,7 +46,6 @@ nav > a {
 }
 
 .menu__item {
-  font-size: 24px;
   color: black;
   margin: 0 30px;
   cursor: pointer;
@@ -144,7 +143,6 @@ nav > a {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396df2;
 }
 
 .multii > p {
@@ -176,7 +174,6 @@ nav > a {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396df2;
 }
 
 .lenguages p {
@@ -244,7 +241,6 @@ nav > a {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396df2;
 }
 
 .profile > main > p {
@@ -349,16 +345,32 @@ ul {
 
 .my-button {
   display: flex;
+  color: #6070ff;
   flex-direction: row;
   padding: 12px;
   gap: 10px;
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #6070ff;
   width: 126px;
   height: 48px;
   position: absolute;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.my-button:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.my-button:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.my-button:disabled {
+  color: #5e6c84;
+  border: 1px solid #c1c7d0;
 }
 
 .multi {
@@ -444,7 +456,6 @@ ul {
 
 .about-myself {
   background-color: #fff;
-  background-color: #fff;
   margin-top: 114px;
   border-top-right-radius: 80px;
   height: 1263px;
@@ -508,8 +519,6 @@ ul {
   align-items: center;
   padding: 12px;
   gap: 10px;
-  background-color: white;
-  border: 1px solid #6070ff;
   width: 162px;
   height: 48px;
   border-radius: 8px;
@@ -540,7 +549,7 @@ h3 {
   font-size: 20px;
   line-height: 24px;
   margin-left: 36px;
-  margin-top: 0px;
+  margin-top: 1px;
 }
 
 .lenguages {
@@ -694,10 +703,27 @@ textarea {
   cursor: pointer;
   margin-top: 22px;
   margin-left: 24px;
+  color: #6070ff;
+}
+
+.el-botones:hover {
+  background-color: #6070ff;
+  color: #fff;
+  border-color: #fff;
+}
+
+.el-botones:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.el-botones:disabled {
+  color: #5e6c84;
+  border: 1px solid #c1c7d0;
 }
 
 .background {
-  background-image: url(assets/contact-form.png);
+  background-image: url("assets/contact-form.png");
   border-top-left-radius: 90px;
   background-size: contain, cover;
   background-position: right;
@@ -723,35 +749,38 @@ label {
 
 .boton {
   margin-top: 24px;
+  align-items: center;
 }
 
-@media only screen and (min-width: 768px){
-    .profile{
+.second {
+  margin-top: 90px;
+}
+
+@media only screen and (min-width: 768px) {
+  .profile {
     background-image: url("assets/profile-web.svg");
     width: 100%;
     height: 85vh;
     padding: 0 260px;
   }
-  
+
   .profile > h1 {
-    line-height: 52px;
     color: #172b4d;
     letter-spacing: 0.37px;
-    font-family: 'Poppins';
+    font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
     display: flex;
     align-items: center;
-    letter-spacing: 0.37px;
     margin-top: 100px;
   }
 
   .profile > main {
     margin-top: 12px;
   }
-  
+
   .profile > h2 {
     text-transform: uppercase;
     color: #7f8cff;
@@ -759,7 +788,7 @@ label {
     font-weight: 500;
     font-size: 16px;
   }
-  
+
   .text-container-1 > p {
     text-align: left;
     margin-right: 12px;
@@ -771,45 +800,44 @@ label {
     border-radius: 8px;
     order: 2;
   }
-  
+
   .tonicc > p {
     color: #344563;
     font-size: 15px;
     margin-top: 32px;
   }
-  
+
   .text-container > p {
     text-align: left;
     margin-right: 12px;
   }
-  
+
   .boton p {
     font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-    color: #396df2;
   }
-  
+
   .multii > p {
     color: #344563;
     font-size: 15px;
     margin-top: 12px;
   }
-  
+
   .tonic-22 > p {
     color: #344563;
     font-size: 15px;
     margin-top: 12px;
   }
-  
+
   .multi-22 > p {
     color: #344563;
     font-size: 15px;
     margin-top: 12px;
   }
-  
+
   .el-boton p {
     display: flex;
     justify-content: center;
@@ -821,9 +849,8 @@ label {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-    color: #396df2;
   }
-  
+
   .lenguages p {
     display: flex;
     align-items: center;
@@ -833,10 +860,10 @@ label {
     font-size: 15px;
     line-height: 20px;
     color: #253858;
-    margin-left: 0px;
+    margin-left: 1px;
     margin-top: 16px;
   }
-  
+
   .lenguages-ht p {
     display: flex;
     align-items: center;
@@ -846,10 +873,10 @@ label {
     font-size: 15px;
     line-height: 20px;
     color: #253858;
-    margin-left: 0px;
+    margin-left: 1px;
     margin-top: 16px;
   }
-  
+
   .lenguages-cs p {
     display: flex;
     align-items: center;
@@ -859,10 +886,10 @@ label {
     font-size: 15px;
     line-height: 20px;
     color: #253858;
-    margin-left: 0px;
+    margin-left: 1px;
     margin-top: 16px;
   }
-  
+
   .fram p {
     font-family: Poppins, sans-serif;
     font-style: normal;
@@ -871,7 +898,7 @@ label {
     line-height: 24px;
     margin-top: 36px;
   }
-  
+
   .class p {
     font-family: Poppins, sans-serif;
     font-style: normal;
@@ -880,7 +907,7 @@ label {
     line-height: 24px;
     margin-top: 108px;
   }
-  
+
   .el-botones p {
     display: flex;
     justify-content: center;
@@ -892,34 +919,44 @@ label {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-    color: #396df2;
   }
-  
+
+  .contact-me p {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    width: 569px;
+    height: 102px;
+  }
+
   .profile > main > p {
     color: #344563;
   }
-  
+
   .social-container {
     display: flex;
     justify-content: flex-start;
     margin-top: 20px;
     margin-bottom: 136px;
   }
-  
+
   ul {
     list-style-type: none;
   }
-  
+
   .social-container ul {
     display: flex;
     justify-content: flex-start;
     list-style: none;
   }
-  
+
   .social-container li {
     margin-right: 20px;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -927,7 +964,7 @@ label {
     padding: 0;
     margin: 0;
   }
-  
+
   .tonic {
     box-sizing: border-box;
     display: flex;
@@ -942,14 +979,13 @@ label {
     border-radius: 16px;
     margin-top: 114px;
   }
-  
+
   .imagen-contenedor {
-    display: flex;
-    width: 544px;
-    height: 448px;
+    width: 50%;
+    height: 100%;
     border-radius: 8px;
   }
-  
+
   .tonicc > h5 {
     display: flex;
     width: 295px;
@@ -964,42 +1000,42 @@ label {
   }
 
   .tonicc {
-    margin-left: 46px;
+    margin-left: 24px;
   }
-  
+
   .container {
     display: flex;
   }
-  
+
   .text-container {
     display: flex;
     align-items: center;
     margin-top: 20px;
   }
-  
+
   .cano {
     font-size: 13px;
     color: #344563;
     font-weight: 700;
   }
-  
+
   .nopi {
     font-size: 13px;
     margin-left: 12px;
     color: #7a869a;
     font-weight: 600;
   }
-  
+
   .text-container > img {
     width: 8px;
     height: 8px;
   }
-  
+
   .languages {
     display: flex;
     margin-top: 28px;
   }
-  
+
   .my-button {
     display: flex;
     flex-direction: row;
@@ -1013,7 +1049,7 @@ label {
     border-radius: 8px;
     cursor: pointer;
   }
-  
+
   .multi {
     box-sizing: border-box;
     display: flex;
@@ -1028,7 +1064,7 @@ label {
     border-radius: 16px;
     margin-top: 114px;
   }
-  
+
   .multii > h5 {
     display: flex;
     width: 295px;
@@ -1041,7 +1077,7 @@ label {
     color: #172b4d;
     margin-top: 32px;
   }
-  
+
   .tonic-2 {
     box-sizing: border-box;
     display: flex;
@@ -1056,7 +1092,7 @@ label {
     border-radius: 16px;
     margin-top: 114px;
   }
-  
+
   .tonic-22 > h5 {
     display: flex;
     width: 295px;
@@ -1069,7 +1105,7 @@ label {
     color: #172b4d;
     margin-top: 32px;
   }
-  
+
   .multi-2 {
     box-sizing: border-box;
     display: flex;
@@ -1084,7 +1120,7 @@ label {
     border-radius: 16px;
     margin-top: 114px;
   }
-  
+
   .multi-22 > h5 {
     display: flex;
     width: 295px;
@@ -1097,17 +1133,17 @@ label {
     color: #172b4d;
     margin-top: 32px;
   }
-  
+
   .first {
     background-size: cover;
-    width: 447px;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    padding: 24px;
+    padding: 0 24px 0 0;
     margin-top: 166px;
-    margin-left: 143px;
+    margin-left: 8%;
   }
-  
+
   .first h4 {
     width: 327px;
     height: 35px;
@@ -1119,12 +1155,12 @@ label {
     display: flex;
     align-items: center;
     color: #172b4d;
-    margin-top: 0px;
+    margin-top: 1px;
   }
-  
+
   .first > main > p {
-    width: 447px;
-    height: 147px;
+    display: block;
+    width: 100%;
     font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1147,9 +1183,8 @@ label {
     font-size: 16px;
     line-height: 24px;
     color: #7f8cff;
-    margin-top: 12px;
   }
-  
+
   .el-boton {
     display: flex;
     flex-direction: row;
@@ -1164,10 +1199,10 @@ label {
     cursor: pointer;
     margin-top: 22px;
   }
-  
+
   .second {
-    margin-left: 24px;
     margin-top: 166px;
+    width: 60%;
   }
 
   .social {
@@ -1175,17 +1210,17 @@ label {
     justify-content: flex-start;
     margin-top: 20px;
   }
-  
+
   .social ul {
     display: flex;
     justify-content: flex-start;
     list-style: none;
   }
-  
+
   .social li {
     margin-right: 20px;
   }
-  
+
   h3 {
     font-family: Poppins, sans-serif;
     font-style: normal;
@@ -1194,7 +1229,7 @@ label {
     line-height: 24px;
     margin-left: 16px;
   }
-  
+
   .lenguages {
     display: flex;
     flex-direction: column;
@@ -1206,16 +1241,16 @@ label {
     border-radius: 8px;
     padding: 12px;
   }
-  
+
   .lenguages img {
     display: flex;
     justify-content: center;
     width: 48px;
     height: 48px;
-    margin-top: 0px;
-    margin-left: 0px;
+    margin-top: 1px;
+    margin-left: 1px;
   }
-  
+
   .lenguages-ht {
     display: flex;
     flex-direction: column;
@@ -1223,20 +1258,20 @@ label {
     width: 120px;
     height: 120px;
     margin-top: 36px;
-    margin-left: 16px;
+    margin-left: 7%;
     border-radius: 8px;
     padding: 12px;
   }
-  
+
   .lenguages-ht img {
     display: flex;
     justify-content: center;
     width: 48px;
     height: 48px;
-    margin-top: 0px;
-    margin-left: 0px;
+    margin-top: 1px;
+    margin-left: 1px;
   }
-  
+
   .lenguages-cs {
     display: flex;
     flex-direction: column;
@@ -1244,20 +1279,20 @@ label {
     width: 120px;
     height: 120px;
     margin-top: 36px;
-    margin-left: 16px;
+    margin-left: 13%;
     border-radius: 8px;
     padding: 12px;
   }
-  
+
   .lenguages-cs img {
     display: flex;
     justify-content: center;
     width: 48px;
     height: 48px;
-    margin-top: 0px;
-    margin-left: 0px;
+    margin-top: 1px;
+    margin-left: 1px;
   }
-  
+
   .fram {
     display: flex;
     width: 3px;
@@ -1265,16 +1300,16 @@ label {
     margin-top: 12px;
     margin-left: 16px;
   }
-  
+
   .fram img {
     display: flex;
     justify-content: flex-end;
     width: 6px;
     height: 12px;
     margin-top: 42px;
-    margin-left: 140px;
+    margin-left: 400px;
   }
-  
+
   .class {
     display: flex;
     width: 3px;
@@ -1282,16 +1317,16 @@ label {
     margin-top: 12px;
     margin-left: 16px;
   }
-  
+
   .class img {
     display: flex;
     justify-content: center;
     width: 6px;
     height: 12px;
     margin-top: 114px;
-    margin-left: 215px;
+    margin-left: 473px;
   }
-  
+
   .contact-me {
     width: 100%;
     height: 846px;
@@ -1300,17 +1335,10 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .contact-me p {
-    font-family: Poppins, sans-serif;
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    width: 569px;
-    height: 102px;
+    background-image: url("assets/contact-web.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
   }
 
   .contact-me h2 {
@@ -1323,12 +1351,12 @@ label {
     margin-top: 63px;
     text-align: center;
   }
-  
+
   .loremipsum {
     position: absolute;
     background: #fff;
   }
-  
+
   input {
     display: block;
     border-radius: 8px;
@@ -1338,7 +1366,7 @@ label {
     height: 48px;
     margin-top: 20px;
   }
-  
+
   textarea {
     display: block;
     border-radius: 8px;
@@ -1348,7 +1376,7 @@ label {
     width: 447px;
     height: 170px;
   }
-  
+
   .el-botones {
     display: flex;
     flex-direction: row;
@@ -1363,25 +1391,22 @@ label {
     border-radius: 8px;
     cursor: pointer;
     margin-top: 27px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-right: 24px;
   }
-  
+
   .background {
-    background-image: url(assets/contact-web.svg);
+    background-image: none;
     margin-top: 79px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .container-white {
     background-color: white;
   }
-  
+
   label {
     display: flex;
     justify-content: center;
@@ -1399,19 +1424,18 @@ label {
   }
 
   .multii {
-    margin-left: 48px;
+    margin-left: 24px;
   }
 
   .tonic-22 {
-    margin-left: 46px;
+    margin-left: 24px;
   }
 
   .multi-22 {
-    margin-left: 48px;
+    margin-left: 24px;
   }
 
   .boton {
     margin-top: 56px;
   }
-  
 }
